@@ -1,89 +1,107 @@
-🖥️ System Monitor GUI (Rust)
+<div align="center">
 
-Projeto de estudo desenvolvido em Rust com o objetivo de aprender interfaces gráficas (GUI) e entender melhor como o sistema operacional funciona, exibindo informações do sistema em uma aplicação desktop.
+# 🖥️ System Monitor GUI (Rust)
 
-O foco principal é aprendizado, experimentação e exploração do ecossistema Rust para aplicações gráficas.
+<img src="https://img.shields.io/badge/Rust-🦀-orange" />
+<img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow" />
+<img src="https://img.shields.io/badge/Plataforma-Windows-blue" />
+<img src="https://img.shields.io/badge/GUI-egui%20%2F%20eframe-purple" />
 
-🎯 Objetivo
+Uma aplicação desktop desenvolvida em **Rust** para monitoramento de informações do sistema operacional, com foco em **aprendizado**, **experimentação** e **exploração do ecossistema Rust para GUIs**.
 
-Este projeto tem como objetivos:
+</div>
 
-Aprender Rust na prática
+---
 
-Estudar criação de GUI com egui e eframe
+## 🎯 Objetivo
 
-Coletar e exibir informações do sistema usando sysinfo
+Este projeto tem como principais objetivos:
 
-Entender melhor conceitos de sistema operacional (CPU, memória, processos, etc.)
+* 📘 Aprender **Rust na prática**
+* 🖼️ Estudar criação de **interfaces gráficas (GUI)** com `egui` e `eframe`
+* 🧠 Compreender melhor conceitos de **sistema operacional**
+* 📊 Coletar e exibir informações do sistema usando `sysinfo`
+* 🧱 Estruturar código de forma clara e didática
 
-Desenvolver uma aplicação desktop simples no Windows
+---
 
-🪟 Plataforma
+## 🪟 Plataforma
 
-Sistema operacional alvo: Windows
+* **Sistema operacional alvo:** Windows
 
-O projeto pode futuramente ser adaptado para outras plataformas, mas no momento o foco é Windows.
+> 💡 O projeto poderá ser adaptado futuramente para Linux e macOS.
 
-📊 Funcionalidades (planejadas / em desenvolvimento)
+---
 
-Exibição de informações do sistema:
+## 📊 Funcionalidades
 
-Uso de CPU
+### ✅ Implementadas / Em desenvolvimento
 
-Uso de memória RAM
+* 🖥️ Informações do sistema operacional
+* ⚙️ Uso de CPU
+* 💾 Uso de memória RAM
+* 🔄 Atualização periódica dos dados
+* 🎨 Interface gráfica simples e responsiva
 
-Informações do sistema operacional
+### 🚧 Planejadas
 
-Processos em execução (futuro)
+* 📋 Lista de processos em execução
+* 🔍 Detalhes por processo (uso de CPU/RAM)
+* 🧵 Organização modular mais avançada
 
-Interface gráfica simples e responsiva
+---
 
-Atualização periódica dos dados
+## 🧠 Conceitos Estudados
 
-Código organizado com foco em aprendizado
+* Estrutura de projetos em **Rust**
+* Aplicações desktop com `eframe`
+* GUI imediata com `egui`
+* Coleta de dados do sistema com `sysinfo`
+* Separação entre **lógica de sistema** e **interface gráfica**
+* Boas práticas e organização de código
 
-🧠 O que está sendo estudado
+---
 
-Estrutura de projetos em Rust
+## 🛠️ Tecnologias e Crates
 
-Criação de aplicações desktop com eframe
+### Linguagem
 
-Construção de interfaces com egui
+* **Rust** 🦀
 
-Coleta de informações do sistema com sysinfo
+### Crates utilizadas
 
-Separação entre lógica de sistema e interface gráfica
+* [`eframe`](https://crates.io/crates/eframe) – Framework para aplicações desktop
+* [`egui`](https://crates.io/crates/egui) – Biblioteca de GUI imediata
+* [`sysinfo`](https://crates.io/crates/sysinfo) – Coleta de informações do sistema
 
-Boas práticas e organização de código em Rust
+> Outras crates podem ser adicionadas conforme a evolução do projeto.
 
-🛠️ Tecnologias, Linguagem e Crates
-Linguagem
+---
 
-Rust
+## 🚧 Status do Projeto
 
-Crates utilizadas
+* 🔧 **Em desenvolvimento**
+* 📚 Projeto com foco **educacional**
 
-eframe – framework para criar aplicações desktop usando egui
+Mudanças frequentes no código são esperadas.
 
-egui – biblioteca de GUI imediata, simples e eficiente
+---
 
-sysinfo – coleta de informações do sistema (CPU, memória, processos, etc.)
+## 🤝 Contribuições e Feedback
 
-Outras crates podem ser adicionadas futuramente conforme a evolução do projeto.
+Sugestões, ideias e feedbacks são **muito bem-vindos**!
+Sinta-se à vontade para abrir issues ou discutir melhorias.
 
-🚧 Status do projeto
+---
 
-🔧 Em desenvolvimento
-📚 Projeto de estudo e aprendizado
+## 📄 Licença
 
-📌 Observações
+Este projeto foi desenvolvido **exclusivamente para fins educacionais**.
 
-O foco do projeto é aprendizado, não otimização extrema
+---
 
-Mudanças frequentes no código são esperadas
+<div align="center" style="opacity: 0.8">
 
-Feedbacks e sugestões são bem-vindos
+✨ *Aprender Rust construindo algo visual e útil torna o processo muito mais divertido!* ✨
 
-📄 Licença
-
-Projeto desenvolvido exclusivamente para fins educacionais.
+</div>
