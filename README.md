@@ -1,107 +1,120 @@
 <div align="center">
 
-# 🖥️ System Monitor GUI (Rust)
+# system-monitor-gui
 
-<img src="https://img.shields.io/badge/Rust-🦀-orange" />
-<img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow" />
-<img src="https://img.shields.io/badge/Plataforma-Windows-blue" />
-<img src="https://img.shields.io/badge/GUI-egui%20%2F%20eframe-purple" />
+🖥️ **System Monitor GUI** — Aplicação desktop em **Rust** para monitoramento de recursos do sistema operacional, desenvolvida com foco em aprendizado de GUI e conceitos de sistemas.
 
-Uma aplicação desktop desenvolvida em **Rust** para monitoramento de informações do sistema operacional, com foco em **aprendizado**, **experimentação** e **exploração do ecossistema Rust para GUIs**.
+![Rust](https://img.shields.io/badge/Rust-1.70%2B-orange?logo=rust)
+![Platform](https://img.shields.io/badge/Platform-Windows-blue)
+![Status](https://img.shields.io/badge/Status-Em%20desenvolvimento-yellow)
 
 </div>
 
 ---
 
-## 🎯 Objetivo
+## 📌 Sobre
 
-Este projeto tem como principais objetivos:
+Este projeto é um **system monitor** simples escrito em **Rust**, utilizando **egui/eframe** para a interface gráfica e **sysinfo** para coleta de dados do sistema.
 
-* 📘 Aprender **Rust na prática**
-* 🖼️ Estudar criação de **interfaces gráficas (GUI)** com `egui` e `eframe`
-* 🧠 Compreender melhor conceitos de **sistema operacional**
-* 📊 Coletar e exibir informações do sistema usando `sysinfo`
-* 🧱 Estruturar código de forma clara e didática
+O objetivo principal é **estudo e experimentação**, explorando:
+
+* Interfaces gráficas em Rust
+* Comunicação entre lógica de sistema e GUI
+* Conceitos básicos de sistemas operacionais
+
+---
+
+## ✨ Funcionalidades
+
+* Exibição de uso de **CPU**
+* Exibição de uso de **memória RAM**
+* Informações do sistema operacional
+* Atualização periódica dos dados
+* Interface gráfica simples e responsiva
+
+### Planejado
+
+* Listagem de processos
+* Detalhes de CPU/RAM por processo
+* Melhor organização modular
+
+---
+
+## 🧠 Tecnologias Utilizadas
+
+* **Rust**
+* [`eframe`](https://crates.io/crates/eframe)
+* [`egui`](https://crates.io/crates/egui)
+* [`sysinfo`](https://crates.io/crates/sysinfo)
+
+---
+
+## 📂 Estrutura do Projeto
+
+```text
+system-monitor-gui/
+├── src/
+│   ├── main.rs        # Ponto de entrada da aplicação
+│   ├── app.rs         # Lógica principal da aplicação
+│   └── system.rs      # Coleta de informações do sistema
+├── Cargo.toml
+└── README.md
+```
+
+> A estrutura pode mudar conforme o projeto evolui.
+
+---
+
+## ▶️ Como Executar
+
+### Pré-requisitos
+
+* Rust (versão estável)
+* Cargo
+
+### Passos
+
+```bash
+git clone https://github.com/seu-usuario/system-monitor-gui.git
+cd system-monitor-gui
+cargo run
+```
 
 ---
 
 ## 🪟 Plataforma
 
-* **Sistema operacional alvo:** Windows
+* Windows (principal)
 
-> 💡 O projeto poderá ser adaptado futuramente para Linux e macOS.
-
----
-
-## 📊 Funcionalidades
-
-### ✅ Implementadas / Em desenvolvimento
-
-* 🖥️ Informações do sistema operacional
-* ⚙️ Uso de CPU
-* 💾 Uso de memória RAM
-* 🔄 Atualização periódica dos dados
-* 🎨 Interface gráfica simples e responsiva
-
-### 🚧 Planejadas
-
-* 📋 Lista de processos em execução
-* 🔍 Detalhes por processo (uso de CPU/RAM)
-* 🧵 Organização modular mais avançada
+O código pode ser adaptado futuramente para Linux e macOS.
 
 ---
 
-## 🧠 Conceitos Estudados
+## 🚧 Status
 
-* Estrutura de projetos em **Rust**
-* Aplicações desktop com `eframe`
-* GUI imediata com `egui`
-* Coleta de dados do sistema com `sysinfo`
-* Separação entre **lógica de sistema** e **interface gráfica**
-* Boas práticas e organização de código
+Projeto em **desenvolvimento ativo**, voltado para **fins educacionais**.
+
+Mudanças frequentes são esperadas.
 
 ---
 
-## 🛠️ Tecnologias e Crates
+## 🤝 Contribuindo
 
-### Linguagem
+Contribuições são bem-vindas!
 
-* **Rust** 🦀
-
-### Crates utilizadas
-
-* [`eframe`](https://crates.io/crates/eframe) – Framework para aplicações desktop
-* [`egui`](https://crates.io/crates/egui) – Biblioteca de GUI imediata
-* [`sysinfo`](https://crates.io/crates/sysinfo) – Coleta de informações do sistema
-
-> Outras crates podem ser adicionadas conforme a evolução do projeto.
-
----
-
-## 🚧 Status do Projeto
-
-* 🔧 **Em desenvolvimento**
-* 📚 Projeto com foco **educacional**
-
-Mudanças frequentes no código são esperadas.
-
----
-
-## 🤝 Contribuições e Feedback
-
-Sugestões, ideias e feedbacks são **muito bem-vindos**!
-Sinta-se à vontade para abrir issues ou discutir melhorias.
+* Abra uma *issue* para sugestões ou bugs
+* Envie um *pull request* com melhorias
 
 ---
 
 ## 📄 Licença
 
-Este projeto foi desenvolvido **exclusivamente para fins educacionais**.
+Este projeto é distribuído **exclusivamente para fins educacionais**.
 
 ---
 
-<div align="center" style="opacity: 0.8">
+<div align="center">
 
-✨ *Aprender Rust construindo algo visual e útil torna o processo muito mais divertido!* ✨
+🦀 *Aprendendo Rust na prática, explorando GUIs e sistemas operacionais.*
 
 </div>
