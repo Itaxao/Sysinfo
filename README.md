@@ -75,8 +75,8 @@ system-monitor-gui/
 ### Passos
 
 ```bash
-git clone https://github.com/seu-usuario/system-monitor-gui.git
-cd system-monitor-gui
+git clone https://github.com/Itaxao/Sysinfo.git
+cd Sysinfo
 cargo run
 ```
 
