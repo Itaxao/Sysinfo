@@ -56,7 +56,7 @@ system-monitor-gui/
 ├── src/
 │   ├── main.rs        # Ponto de entrada da aplicação
 │   ├── app.rs         # Lógica principal da aplicação
-│   └── system.rs      # Coleta de informações do sistema
+│   └── ui_logic.rs      # Coleta de informações do sistema
 ├── Cargo.toml
 └── README.md
 ```
