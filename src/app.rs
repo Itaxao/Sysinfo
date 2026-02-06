@@ -4,12 +4,14 @@ use crate::ui_logic;
 
 pub struct MyAppData {
     pub sys: System,
+    pub show_window: bool,
 }
 
 impl Default for MyAppData {
     fn default() -> Self {
         Self {
             sys: System::new_all(),
+            show_window: true,
         }
     }
 }
@@ -28,6 +30,17 @@ impl eframe::App for MyAppData {
         egui::CentralPanel::default().show(ctx, |ui| {
             ui_logic::render_sys_info(ui, &self.sys);
         });
+
+        egui::Window::new("Informações do sistema: ")
+            .default_width(320.0)
+            .default_height(480.0)
+            .open(&mut self.show_window)
+            .resizable(true)
+            .scroll(false)
+            .show(ctx, |ui| {
+                ui_logic::window_sys_info(ui, &self.sys);
+            });
+
         ctx.request_repaint_after(std::time::Duration::from_millis(500));
 
     }

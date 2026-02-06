@@ -77,3 +77,53 @@ pub fn render_sys_info(ui: &mut egui::Ui, sys: &System) {
     ui.add_space(10.0);
 
 }
+
+pub fn window_sys_info(ui: &mut egui::Ui, sys: &System) {
+
+    // Informações do CPU
+    ui.horizontal(|ui| {
+        ui.colored_label(egui::Color32::RED, "CPU Cores: ");
+        ui.colored_label(egui::Color32::WHITE, sys.cpus().len().to_string());
+    });
+
+    // Espaçamento de cpu para memoria
+    ui.add_space(10.0);
+    ui.separator();
+    ui.add_space(10.0);
+
+    // Informações da memoria ram
+    ui.horizontal(|ui| {
+        ui.colored_label(egui::Color32::RED, "Total Memory: ");
+        ui.colored_label(egui::Color32::WHITE, format_bytes(sys.total_memory()))
+    });
+
+    ui.horizontal(|ui| {
+        ui.colored_label(egui::Color32::RED, "Memory Usage: ");
+        ui.colored_label(egui::Color32::WHITE, format_bytes(sys.used_memory()))
+    });
+
+    ui.add_space(5.0);
+
+    let memory_usage = sys.used_memory() as f64 / sys.total_memory() as f64;
+    let percentage = memory_usage * 100.0;
+
+    let color = if percentage <= 50.0 {
+        egui::Color32::GREEN
+    } else if percentage <= 70.0 {
+        egui::Color32::YELLOW
+    } else{
+        egui::Color32::RED
+    };
+
+    ui.add(
+        egui::ProgressBar::new(memory_usage as f32)
+            .fill(color)
+            .text(format!("{:.1}%", percentage))
+    );
+
+    // Espaçamento de Ram para o próximo
+    ui.add_space(10.0);
+    ui.separator();
+    ui.add_space(10.0);
+
+}
