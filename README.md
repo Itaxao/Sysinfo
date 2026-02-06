@@ -56,7 +56,7 @@ system-monitor-gui/
 ├── src/
 │   ├── main.rs        # Ponto de entrada da aplicação
 │   ├── app.rs         # Lógica principal da aplicação
-│   └── system.rs      # Coleta de informações do sistema
+│   └── ui_logic.rs      # Coleta de informações do sistema
 ├── Cargo.toml
 └── README.md
 ```
@@ -75,8 +75,8 @@ system-monitor-gui/
 ### Passos
 
 ```bash
-git clone https://github.com/seu-usuario/system-monitor-gui.git
-cd system-monitor-gui
+git clone https://github.com/Itaxao/Sysinfo.git
+cd Sysinfo
 cargo run
 ```
 
